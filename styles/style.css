@@ -57,6 +57,7 @@ body {
     padding-top: 10px;
     padding-left: 15px;
     height: 350px;
+    resize: none;
 }
 
 ::placeholder {
@@ -123,11 +124,13 @@ body {
 .encriptador_salida img{
     width: 100%;
     height: auto;
+    margin-bottom: 1.5rem;
 }
 
 .text-encriptado{
     font-family: var(--fuente-montserrat);
-    font-size: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
     width: 100%;
     background: var(--color-2) 1;
     background-repeat: no-repeat;
@@ -137,37 +140,18 @@ body {
     position: relative;
     resize: none;
     text-align: center;
+
 }
 
 .informacion-1 {
     text-align: center;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+
 }	
 
 .text-encriptado:focus {
     outline: none;
-}
-
-.text-encriptado::before {
-    content: "Ningún mensaje fue encontrado";
-    font-weight: bold;
-    font-size: 1.2rem;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    white-space: pre-line;
-}
-
-.text-encriptado::after {
-    content: "Ingresa el texto que desees encriptar o desencriptar";
-    font-size: 0.9rem;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    white-space: pre-line;
 }
 
 
@@ -198,7 +182,7 @@ body {
     display: none;
 }	
 
-/* Media Queries para Responsividad */
+/* responsivo */
 @media (max-width: 768px) {
     .encriptador {
         padding: 5%;
