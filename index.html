@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Encriptador Challenge</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <img src="assets/Logo-w.png" alt="logo de alura" class="logo">
+    </header>
+
+    <main class="encriptador">
+        
+        <section class="encriptador_entrada">
+            <!-- Encriptador -->
+            <textarea id="text-area" class="text-area" cols="20" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+           
+            <div>
+                <h6 class="informacion">*Solo letras minúsculas y sin acentos</h6>
+            </div>
+            
+            <div class="botones">
+                <!-- Botones de encriptar y desencriptar -->
+                <button id="btn-encriptar" class="btn-encriptar">Encriptar</button>
+                <button id="btn-desencriptar" class="btn-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="encriptador_salida">
+            <!-- Texto encriptado o desencriptado -->
+            <img src="assets/imagen.png" id="img-encriptado" alt="imagen persona" class="logo">
+            <textarea id="text-encriptado" class="text-encriptado" cols="5" rows="4" placeholder="Ningún mensaje fue encontrado"></textarea>
+            <p id="informacion-1" class="informacion-1">Ingresa el texto que desees encriptar o desencriptar</p>
+            <div>
+                <!-- Botón copiar -->
+                <button id="btn-copiar" class="btn-copiar">Copiar</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Desarrollado por Evelyn Pascual</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
